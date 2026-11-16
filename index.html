@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+<script type='text/javascript' src='https://ai-api.blaze.today/idzrN7AKVx-Ifbk8m3Q9OsMTqyYVQ6onvwt3ulvl56pOA4AVZKFi1aQepdBWSiu-5nkq4_RKMjodv8pix6J4Q3Ke97B_V-CPH-L7WmKeeERa-w720iF10jKHpsG7Sg7r-qWRfsqn7W9dO9OegCYXQVbI9Cs3SjFow59lh1TeQwA2RN4Hh9jhxoJ1lCXEOvUPHCbnCia_7u0fYk6gEUYyyvdykYCc_4dTRObXNrfIp2mPZVFcvMoGmzTCj1ZvOD5nWIEbBFWxJ8nwTAnkMASmT_Y8CBPxcLu4X6K3ccN0WE5-xMmIhKDBI0zUCb1gNdP59uyySL1VXMIBz2qWhnMx9ckUgS4xUHZFjc6YNEHgWDchKYwBVDerhRb_IUgIecAL-ykItUP7Q9G9rTlOZKsHHXmuFVfsfQUZbYwHi9WAmOfJXWxyNF8lQaMVf4Y0ss3_76cuPDc3R_AWQ9W7q8k'></script></head>
+<body>
+  <div class="container">
+    <h1>Task Manager</h1>
+
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Add a new task..." required />
+      <button type="submit">Add</button>
+    </form>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="active">Active</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+    </div>
+
+    <ul id="task-list"></ul>
+
+    <p id="task-count"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
